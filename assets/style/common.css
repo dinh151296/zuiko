@@ -1,0 +1,186 @@
+/* ======common style====== */
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+.font-teko {
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+
+
+/* =======reset======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    transition: .2s;
+}
+
+p,
+span,
+ul,
+li,
+a,
+div,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+label:focus,
+button:focus {
+    outline: none;
+}
+/* =======end - reset======= */
+
+.container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* =========start - header========= */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.header__logo img  {
+    max-width: 173px;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.main-menu li {
+    background-color: #fff;
+    margin: 0px 16px;
+}
+
+.main-menu li a {
+    text-align: center;
+    font-size: 10px;
+    padding: 20px 15px;
+    display: block;
+    max-height: 80px;
+    position: relative;
+
+    -webkit-transition: background-size 0.4s cubic-bezier(0.86, 0, 0.07, 1), color 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: background-size 0.4s cubic-bezier(0.86, 0, 0.07, 1), color 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#D85E2D), to(#D85E2D) );
+    background-image: linear-gradient(#D85E2D, #D85E2D);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0 4px;
+    text-decoration: none;
+}
+
+.main-menu li a:hover {
+    background-position: 0 100%;
+    background-size: 100% 4px;
+    opacity: 1;
+}
+
+.main-menu li.current a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    height: 4px;
+    left: 0;
+    background-color: #D85E2D;
+}
+
+.main-menu li a span {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main-menu li:last-child {
+    background-color: #D85E2D;
+    color: #fff;
+    padding: 0 30px;
+    margin: 0px;
+}
+
+.main-menu li:last-child a span {
+    font-size: 20px;
+}
+
+
+/* =========edn - header========= */
