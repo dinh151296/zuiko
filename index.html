@@ -60,6 +60,11 @@
                     </li>
                 </ul>
             </nav>
+            <div class="menu-mobile-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <!-- end header -->
@@ -79,11 +84,83 @@
                 </div>
             </div>
         </section>
+        <section class="section strengths">
+            <div class="container">
+                <div class="section__title">
+                    <span class="font-teko">Strengths</span>
+                    <h2>
+                        弊社の強み
+                    </h2>
+                    <p>工事のプロフェッショナルとして。</p>
+                </div>
+                <div class="strengths__content">
+                    <img src="./assets/image/strengths-img-01.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section service" id="services">
+            <div class="container">
+                <div class="section__title">
+                    <span class="font-teko">service</span>
+                    <h2>
+                        事業内容
+                    </h2>
+                </div>
+            </div>
+            <div class="service__content">
+                <div class="service__item service-layout__l">
+                    <img src="./assets/image/service-img-01.jpg" alt="">
+                    <div class="service__item-text">
+                        <h3>
+                            工事部
+                            <span class="font-teko">construction</span>
+                        </h3>
+                        <a href="#" class="btn-site">詳しく見る
+                            <img src="./assets/image/right-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="service-layout__r">
+                    <div class="service__item">
+                        <img src="./assets/image/service-img-02.jpg" alt="">
+                        <div class="service__item-text">
+                            <h3>
+                                一級建築事務所
+                                <span class="font-teko">Architects</span>
+                            </h3>
+                            <a href="#" class="btn-site">詳しく見る
+                                <img src="./assets/image/right-icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <img src="./assets/image/service-img-03.jpg" alt="">
+                        <div class="service__item-text">
+                            <h3>
+                                不動産事業
+                                <span class="font-teko">real estate</span>
+                            </h3>
+                            <a href="#" class="btn-site">詳しく見る
+                                <img src="./assets/image/right-icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- end main -->
 
     <footer></footer>
     <!-- end footer -->
+
+    <script>
+        document.querySelector('.menu-mobile-icon').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.header__nav').classList.toggle('show');
+        });
+           
+    </script>
 </body>
 
 </html>
